@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,300;1,900&display=swap');
+
+* {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+
+.sub-title {
+  font-style: italic;
+  margin-top: 1em;
+}
+
+#pre-loader {
+  margin-top: 30vh;
+  font-size: 2em;
+  text-align: center;
+}
