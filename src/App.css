@@ -5,13 +5,55 @@
   color: #333;
 }
 
+h2{
+  font-weight: bold;
+}
+
 .sub-title {
   font-style: italic;
-  margin-top: 1em;
+  margin-top: .6em;
+  margin-bottom: 0;
+  font-size: 2em;
+}
+
+#pre-loader, #loaded {
+  text-align: center;
 }
 
 #pre-loader {
-  margin-top: 30vh;
-  font-size: 2em;
-  text-align: center;
+  margin-top: 20vh;
+}
+
+svg.MuiSvgIcon-root {
+  height: 1.5em;
+  width: 1.5em;
+}
+
+path {
+  color: #fff;
+}
+
+path:hover {
+  color: lightskyblue;
+}
+
+#profilePicture {
+  margin-top: 1.5em;
+  width: 15em;
+}
+
+#top-banner {
+  background: #333;
+  padding: 1em 0;
+}
+
+#app-container {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+}
+
+#spinner {
+  width: 5em;
+  height: 5em;
 }
