@@ -8,10 +8,9 @@ import {
   Switch,
   Route,
   Redirect,
-  Link
 } from "react-router-dom";
-// import ProfilePicture from "./profilepic.png";
 import BusinessCard from "./components/BusinessCard";
+import Resume from "./components/Resume";
 import Fade from "./components/Fade";
 import "./App.scss";
 
@@ -60,14 +59,14 @@ const App = () => {
                           My name is Christopher, I'm a Software Engineer living
                           in Indianapolis. I wrote my first line of code when I
                           was 12 years old, over 22 years ago. I love creating technology
-                          that can scale to millions of users while providing an awesome
-                          experience for both the user and developer. 
+                          that can scale to millions of users while providing a powerful
+                          experience for both users and developers.
                           I'm obsessed with JavaScript, functional programming,
                           blockchain technology, strategy games, and music.
                         </p>
                         <h3>Expert</h3>
                         <p>
-                          JavaScript, Node.js, React, Redux, Next.js, TypeScript, HTML/CSS, Bootstrap,
+                          JavaScript (ES6+), Node.js, React, Redux, Next.js, TypeScript, HTML/CSS, Bootstrap,
                           Material UI, jQuery (&#129326;)
                         </p>
 
@@ -117,18 +116,8 @@ const App = () => {
               </Route>
 
               <Route exact path="/resume">
-                <div className="wrapper">
-                  <Menu />
-                  <Fade childComponent={
-                  <Container>
-                    <Row>
-                      <Col xs={12}>
-                        <h1>Resume</h1>
-                      </Col>
-                    </Row>
-                  </Container>
-                  }/>
-                </div>
+                <Menu />
+                <Resume />
               </Route>
 
               <Route exact path="/projects">

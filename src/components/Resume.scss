@@ -1,0 +1,17 @@
+@import '../../src/variables.scss';
+
+.banner-title {
+    background-color: $light-gray;
+    padding: 0.5em;
+    text-align: center;
+    margin-bottom: 1em;
+
+    h2 {
+        font-size: 1.3em;
+        padding-top: .4em;
+    }
+}
+
+#quick-nav {
+    margin-bottom: 1em;
+}
