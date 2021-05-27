@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
+import { HashLink as Link } from 'react-router-hash-link';
 import Fade from "./Fade";
 import "./Resume.scss";
 
@@ -13,7 +14,12 @@ export default function Resume() {
               <Col xs={12}>
                 <h1>Resume</h1>
                 <div id="quick-nav">
-                  Jump to: Angi, HH Gregg, Worm's Way Group, HOPE Foundation, IU Foundation
+                  Jump to:&nbsp;
+                  <Link to="/resume#angi">Angi</Link>,&nbsp;
+                  <Link to="/resume#hhgregg">HH Gregg</Link>,&nbsp;
+                  <Link to="/resume#ww">Worm's Way Group</Link>,&nbsp;
+                  <Link to="/resume#hope">HOPE Foundation</Link>,&nbsp;
+                  <Link to="/resume#iufoundation">IU Foundation</Link>
                 </div>
                 <div className="banner-title">
                   <h2>Summary</h2>
@@ -55,12 +61,12 @@ export default function Resume() {
                 </p>
               </Col>
             </Row>
-            <hr />
+
             <div className="banner-title">
               <h2>Professional Experience</h2>
             </div>
-            <div>
-              <strong>Senior Software Engineer at Angie's List / Angi</strong>
+            <div id="angi">
+              <strong>Senior Software Engineer at Angi/Angie's List</strong>
             </div>
             <em>July 2015 – May 2021</em>
             <div>JavaScript (ES6+), Node.js, React, Redux, Next.js, TypeScript, Scala, Flux, HTML/CSS, Bootstrap, WCAG 2.2 and ADA Compliance</div>
@@ -79,7 +85,7 @@ export default function Resume() {
               </li>
             </ul>
 
-            <div>
+            <div id="hhgregg">
               <strong>Front-End Developer at HH Gregg</strong>
             </div>
             <em>July 2012 – July 2015</em>
@@ -137,7 +143,7 @@ export default function Resume() {
               </li>
             </ul>
 
-            <div>
+            <div id="ww">
               <strong>Full Stack Developer at The Worm's Way Group</strong>
             </div>
             <em>August 2011 - July 2012</em>
@@ -166,7 +172,7 @@ export default function Resume() {
               </li>
             </ul>
 
-            <div>
+            <div id="hope">
               <strong>
                 Web Developer and Marketing Associate at The HOPE Foundation
               </strong>
@@ -205,7 +211,7 @@ export default function Resume() {
               </li>
             </ul>
 
-            <div>
+            <div id="iufoundation">
               <strong>
                 Web Developer at The Indiana University Foundation
               </strong>
@@ -257,6 +263,7 @@ export default function Resume() {
             </div>
             <div>Associate of Applied Science (A.A.S)</div>
             <div>August 2007 - May 2009</div>
+            
           </Container>
         }
       />

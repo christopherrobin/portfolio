@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import BusinessCard from "./components/BusinessCard";
 import Resume from "./components/Resume";
+import Projects from "./components/Projects";
 import Fade from "./components/Fade";
 import "./App.scss";
 
@@ -122,16 +123,7 @@ const App = () => {
 
               <Route exact path="/projects">
                 <Menu />
-                <Fade childComponent={
-                <Container>
-                  <Row>
-                    <Col xs={12}>
-                      <h1>Projects</h1>
-                      <p>Here are some projects</p>
-                    </Col>
-                  </Row>
-                </Container>
-                } />
+                <Fade childComponent={<Projects />} />
               </Route>
 
               <Route exact path="/contact">
