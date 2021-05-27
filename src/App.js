@@ -160,7 +160,6 @@ const App = () => {
                         href="https://www.linkedin.com/in/christopherrr"
                         target="_blank"
                         rel="noopener noreferrer"
-                        // style={{ marginLeft: "1em" }}
                       >
                         <Button block>
                           <LinkedInIcon /> @Christopherrr

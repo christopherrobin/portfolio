@@ -77,9 +77,13 @@ export default function Resume() {
                 data, and unidirectional data flow that can scale to millions
                 of users.
               </li>
-              <li>One of three software engineers to lead the front-end re-branding effort from Angie's List to Angi after the companies merged.</li>
+              <li>Coordinating with product owners, UX designers, customer service representatives, and outside parties to create and implement business requirements.</li>
+              <li>Responsible for creating and breaking down large project requests ("Epics" in Jira) into manageable stories, tasks, and sub-tasks so we can accurately groom, point, and deliver those projects on time.</li>
+              <li>Led the massive front-end re-branding effort from Angie's List to Angi for the Service Provider vertical. (and parts of other verticals)</li>
+              <li>I take professional growth seriously, I mentored many engineers with minimal enterprise level JavaScript experience to be successful and confident front-end engineers. </li>
+              <li>Participated as part of the transition team after the IAC acquisition and the following Home Advisor/Handy/Angie's List merger</li>
               <li>
-                In 2016 we finished a multiple year initiative to drop the pay
+                In 2016 I was part of the team that finished a multiple year initiative to drop the pay
                 wall, integrate a lead generation vertical, and migrate our
                 website to a completely new state of the art platform.
               </li>

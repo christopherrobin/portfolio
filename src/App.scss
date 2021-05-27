@@ -86,15 +86,6 @@ path:hover {
   .selected-menu-item:hover { text-decoration: none; }
 }
 
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
-  #top-banner {
-    h1 {
-      text-align: center;
-    }
-  }
-}
-
 #app-container h1{
   font-weight: 900;
 }
@@ -108,8 +99,45 @@ path:hover {
 .skill-logo {
   text-align: center;
   img {
-    width: 4.5em;
-    height: 4.5em;
+    width: 3em;
+    height: 3em;
     margin-bottom: 1em;
+  }
+}
+
+#card-actions {
+  button {
+    text-align: center;
+    svg {
+      fill: $link-color;
+      width: 1em;
+      height: 1em;
+    }
+  }
+}
+
+#business-card {
+  margin-bottom: 2em;
+}
+
+ul {
+  li {
+    margin-top: 0.6em;
+  }
+}
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+  #top-banner {
+    h1 {
+      text-align: center;
+    }
+  }
+
+  .skill-logo {
+    // This is our sub title on the main card
+    div {
+      font-size: 0.8em;
+    }
   }
 }
