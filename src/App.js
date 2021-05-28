@@ -1,28 +1,27 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Col, Spinner, Button } from "reactstrap";
-// import Menu1 from "./components/menu";
+import { Container, Row, Col, Spinner } from "reactstrap";
 import Menu from "./components/menu2";
-// import Header from './components/header';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Redirect,
 } from "react-router-dom";
+import DescriptionIcon from "@material-ui/icons/Description";
+
+// "Pages"
 import BusinessCard from "./components/BusinessCard";
 import Resume from "./components/Resume";
 import Projects from "./components/Projects";
+
 import Fade from "./components/Fade";
 import "./App.scss";
 
+import Button from "@material-ui/core/Button";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
-import './components/Fade.scss';
-// import { CSSTransitionGroup } from 'react-transition-group'
-// import { TransitionGroup, CSSTransition } from "react-transition-group";
-
-
+import "./components/Fade.scss";
 
 const App = () => {
   const [isLoading, setLoading] = useState(true);
@@ -31,147 +30,159 @@ const App = () => {
     setLoading(false);
   }, []);
 
-  console.log(isLoading);
+  // console.log(isLoading);
 
   return (
     <Container id="app-container">
       <div className="App">
         <Router>
-            <Switch>
-              <Route exact path="/">
-                <Redirect to="/hello" />
-              </Route>
+          <Switch>
+            <Route exact path="/">
+              <Redirect to="/hello" />
+            </Route>
 
-              <Route path="/hello">
-                <Menu />
-                <Container>
-                  <Row>
-                    <Col xs={12} md={6} className="d-md-none">
-                      <Fade childComponent={<BusinessCard />} />
-                    </Col>
-                    
-                    <Col xs={12} md={6}>
-                      <Fade childComponent={
-                      <div>
+            <Route path="/hello">
+              <Menu />
+              <Container>
+                <Row>
+                  <Col xs={12} md={6}>
+                    <Fade
+                      childComponent={
                         <div>
-                          <h1>Hello!</h1>
+                          <h1>Hello! &#128075;</h1>
+                          <p>
+                            My name is Christopher, I'm a Software Engineer
+                            living in Indianapolis. I wrote my first line of
+                            code when I was 12 years old.{" "}
+                          </p>
+                          <p>
+                            I love creating technology that scales to millions
+                            of people while providing a powerful experience for
+                            both users and developers.
+                          </p>
+                          <p>
+                            I'm obsessed with JavaScript, functional
+                            programming, blockchain technology, strategy games,
+                            and music.
+                          </p>
+
+                          <div id="external-links-wrapper">
+                            <Row>
+                              <Col xs={12} lg={4}>
+                                <Button
+                                  target="_blank"
+                                  href="https://github.com/christopherrobin/"
+                                  variant="contained"
+                                  size="medium"
+                                  color="primary"
+                                  startIcon={<GitHubIcon />}
+                                  className="external-links-button"
+                                  fullWidth
+                                >
+                                  GitHub
+                                </Button>
+                              </Col>
+
+                              <Col xs={12} lg={4}>
+                                <Button
+                                  target="_blank"
+                                  href="https://www.linkedin.com/in/christopherrr/"
+                                  variant="contained"
+                                  size="medium"
+                                  color="primary"
+                                  startIcon={<LinkedInIcon />}
+                                  className="external-links-button"
+                                  fullWidth
+                                >
+                                  LinkedIn
+                                </Button>
+                              </Col>
+                              <Col xs={12} lg={4}>
+                                <Button
+                                  target="_blank"
+                                  href="/resume"
+                                  variant="contained"
+                                  size="medium"
+                                  color="primary"
+                                  startIcon={<DescriptionIcon />}
+                                  className="external-links-button"
+                                  fullWidth
+                                >
+                                  Resume
+                                </Button>
+                              </Col>
+                            </Row>
+                          </div>
                         </div>
-                        <p>
-                          My name is Christopher, I'm a Software Engineer living
-                          in Indianapolis. I wrote my first line of code when I
-                          was 12 years old, over 22 years ago. I love creating technology
-                          that can scale to millions of users while providing a powerful
-                          experience for both users and developers.
-                          I'm obsessed with JavaScript, functional programming,
-                          blockchain technology, strategy games, and music.
-                        </p>
-                        <h3>Expert</h3>
-                        <p>
-                          JavaScript (ES6+), Node.js, React, Redux, Next.js, TypeScript, HTML/CSS, Bootstrap,
-                          Material UI, jQuery (&#129326;)
-                        </p>
+                      }
+                    />
+                  </Col>
 
-                        <h3>Proficient</h3>
-                        <p>GraphQL, Scala, Java EE, C# .NET, PHP, SQL/MySQL/NoSQL</p>
+                  <Col xs={12} md={6}>
+                    <Fade childComponent={<BusinessCard />} />
+                  </Col>
+                </Row>
+              </Container>
+            </Route>
 
-                        <h3>Summary</h3>
-                        <ul>
-                          <li>
-                            HTML 5 / CSS 3 ( + Bootstrap, Material UI, Tailwind,
-                            SASS, LESS)
-                          </li>
-                          <li>
-                            JavaScript (ECMAScript, Babel, Next JS, NodeJS, React,
-                            Redux, Underscore/Lodash, Webpack, Angular)
-                          </li>
-                          <li>C# / C++ / ASP.NET</li>
-                          <li>Java EE, JSTL, Scala</li>
-                          <li>SQL / MySQL / NoSQL</li>
-                          <li>
-                            Automated Unit Testing (Mocha, Jest, Chai, Sinon, Selenium)
-                          </li>
-                          <li>WCAG 2.2 and ADA Compliance</li>
-                          <li>UI / UX Development and Testing</li>
-                          <li>Agile (Scrum) Software Development</li>
-                        </ul>
+            <Route exact path="/resume">
+              <Menu />
+              <Resume />
+            </Route>
 
-                        <p>
-                          + Github & SVN, Optimizely, Akamai, Segment, Google
-                          Apps/AdSense/Analytics, Adobe Dynamic Tag Management,
-                          IBM WebSphere Commerce, Confluence, JIRA, Cryptocurrency
-                          and blockchain technology
-                        </p>
-                      </div>
-                      } />
-                    </Col>
+            <Route exact path="/projects">
+              <Menu />
+              <Fade childComponent={<Projects />} />
+            </Route>
 
-                    <Col
-                      xs={12}
-                      md={6}
-                      className="d-none d-xs-none d-sm-none d-md-block"
-                    >
-                      <Fade childComponent={<BusinessCard />} />
-                    </Col>
-                  </Row>
-                </Container>
-              </Route>
-
-              <Route exact path="/resume">
-                <Menu />
-                <Resume />
-              </Route>
-
-              <Route exact path="/projects">
-                <Menu />
-                <Fade childComponent={<Projects />} />
-              </Route>
-
-              <Route exact path="/contact">
-                <Menu />
-                <Container id="Contact-Page--Container">
-                  <Row>
-                    <Col xs={12} style={{ textAlign: "center" }}>
-                    <Fade childComponent={
-                      <div>
-                      <a
-                        alt=""
-                        href="http://github.com/christopherrobin"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Button block>
-                          <EmailIcon /> christopher (at) mail.com
-                        </Button>
-                      </a>
-                      <br />
-                      <a
-                        alt=""
-                        href="http://github.com/christopherrobin"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Button block>
-                          <GitHubIcon /> @ChristopherRobin
-                        </Button>
-                      </a>
-                      <br />
-                      <a
-                        alt=""
-                        href="https://www.linkedin.com/in/christopherrr"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                      >
-                        <Button block>
-                          <LinkedInIcon /> @Christopherrr
-                        </Button>
-                      </a>
-                      </div>
-                    }/>
-                    </Col>
-                  </Row>
-                </Container>
-              </Route>
-            </Switch>
+            <Route exact path="/contact">
+              <Menu />
+              <Container id="Contact-Page--Container">
+                <Row>
+                  <Col xs={12} style={{ textAlign: "center" }}>
+                    <Fade
+                      childComponent={
+                        <div>
+                          <a
+                            alt=""
+                            href="http://github.com/christopherrobin"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Button block>
+                              <EmailIcon /> christopher (at) mail.com
+                            </Button>
+                          </a>
+                          <br />
+                          <a
+                            alt=""
+                            href="http://github.com/christopherrobin"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Button block>
+                              <GitHubIcon /> @ChristopherRobin
+                            </Button>
+                          </a>
+                          <br />
+                          <a
+                            alt=""
+                            href="https://www.linkedin.com/in/christopherrr"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <Button block>
+                              <LinkedInIcon /> @Christopherrr
+                            </Button>
+                          </a>
+                        </div>
+                      }
+                    />
+                  </Col>
+                </Row>
+              </Container>
+            </Route>
+          </Switch>
         </Router>
       </div>
     </Container>

@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import { HashLink as Link } from 'react-router-hash-link';
+import ResumeDownloadButton from "./ResumeDownloadButton";
 import Fade from "./Fade";
 import "./Resume.scss";
 
@@ -13,6 +14,11 @@ export default function Resume() {
             <Row>
               <Col xs={12}>
                 <h1>Resume</h1>
+                <ResumeDownloadButton />
+              </Col>
+            </Row>
+            <Row>
+              <Col xs={12}>
                 <div id="quick-nav">
                   Jump to:&nbsp;
                   <Link to="/resume#angi">Angi</Link>,&nbsp;
@@ -69,7 +75,7 @@ export default function Resume() {
               <strong>Senior Software Engineer at Angi/Angie's List</strong>
             </div>
             <em>July 2015 – May 2021</em>
-            <div>JavaScript (ES6+), Node.js, React, Redux, Next.js, TypeScript, Scala, Flux, HTML/CSS, Bootstrap, WCAG 2.2 and ADA Compliance</div>
+            <div>JavaScript (ES6+), Node.js, React, Redux, Next.js, TypeScript, Scala, Bootstrap, WCAG 2.2 and ADA Compliance</div>
             <ul>
               <li>
                 My primary role has been writing clean and reusable JavaScript
@@ -77,6 +83,7 @@ export default function Resume() {
                 data, and unidirectional data flow that can scale to millions
                 of users.
               </li>
+              <li>Responsible for creating, maintaining, and decommissioning a collection of distributed and loosely coupled apps. (Microservice architecture)</li>
               <li>Coordinating with product owners, UX designers, customer service representatives, and outside parties to create and implement business requirements.</li>
               <li>Responsible for creating and breaking down large project requests ("Epics" in Jira) into manageable stories, tasks, and sub-tasks so we can accurately groom, point, and deliver those projects on time.</li>
               <li>Led the massive front-end re-branding effort from Angie's List to Angi for the Service Provider vertical. (and parts of other verticals)</li>
