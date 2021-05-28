@@ -100,14 +100,13 @@ const App = () => {
                               <Col xs={12} lg={4}>
                                 <Button
                                   target="_blank"
-                                  // href="/resume"
+                                  href="/resume"
                                   variant="contained"
                                   size="medium"
                                   color="primary"
                                   startIcon={<DescriptionIcon />}
                                   className="external-links-button"
                                   fullWidth
-                                  onClick={() => window.open('/ChristopherReynolds-SoftwareEngineer-2021_web.pdf', '_blank')}
                                 >
                                   Resume
                                 </Button>

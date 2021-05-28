@@ -12,6 +12,7 @@ const ResumeDownloadButton = () => {
         color="primary"
         startIcon={<DescriptionIcon />}
         className="external-links-button"
+        onClick={() => window.open('./ChristopherReynolds-SoftwareEngineer-2021_web.pdf', '_blank')}
       >
         Resume (PDF)
       </Button>
