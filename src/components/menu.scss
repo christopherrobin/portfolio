@@ -11,13 +11,13 @@
 
     .selected-menu-item {
         button.btn.btn-secondary {
-            border-bottom: 0.5em solid $primary-dark;
+            border-bottom: 0.5em solid $primary-blue;
             // border-top: 0.5em solid $primary-dark;
             // background: $secondary;
-            color: $primary-dark;
+            color: $primary-blue;
             // height: 6.5em;
             // width: 6.5em;
-            // font-weight: 900;
+            font-weight: 700;
             box-shadow: none;
             transition: width .3s, height .3s, transform .3s;
             transition-timing-function: ease;

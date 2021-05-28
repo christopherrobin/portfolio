@@ -137,6 +137,7 @@ const App = () => {
                     <Fade
                       childComponent={
                         <div>
+                        <h1>Contact Me</h1>
                           <a
                             alt="Email"
                             href="mailto:christopher@spaceagebrains.com"
