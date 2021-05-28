@@ -1,9 +1,9 @@
 // @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,900;1,300;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap');
-@import '../src/variables.scss';
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;1,300;1,700&display=swap");
+@import "../src/variables.scss";
 
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
 }
 
@@ -15,18 +15,19 @@ h1 {
   font-weight: 700;
 }
 
-h2{
+h2 {
   font-weight: 700;
 }
 
 .sub-title {
   font-style: italic;
-  margin-top: .6em;
+  margin-top: 0.6em;
   margin-bottom: 0;
   font-size: 2em;
 }
 
-#pre-loader, #loaded {
+#pre-loader,
+#loaded {
   text-align: center;
 }
 
@@ -63,7 +64,6 @@ path {
   height: 5em;
 }
 
-
 #menu {
   text-align: center;
   a {
@@ -83,10 +83,12 @@ path {
     background-color: #fff;
     color: rgb(133, 133, 133);
   }
-  .selected-menu-item:hover { text-decoration: none; }
+  .selected-menu-item:hover {
+    text-decoration: none;
+  }
 }
 
-#app-container h1{
+#app-container h1 {
   font-weight: 700;
 }
 
@@ -133,7 +135,7 @@ ul {
 }
 
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
   #top-banner {
     h1 {
       text-align: center;
@@ -151,5 +153,15 @@ ul {
 // TODO: I know this isn't ideal but Material-UI has some quirks with custom theming the
 // custom styles on :hoverand :active buttons so I'll have to come back to this later
 a.MuiButtonBase-root.MuiButton-root.MuiButton-contained.external-links-button.MuiButton-containedPrimary.MuiButton-fullWidth {
+  color: #fff;
+}
+
+.btn-resume-download a {
+  color: #fff;
+  padding: 0.3em;
+}
+
+.btn-resume-download a:hover {
+  text-decoration: none;
   color: #fff;
 }

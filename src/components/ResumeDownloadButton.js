@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Button from "@material-ui/core/Button";
 import DescriptionIcon from "@material-ui/icons/Description";
 
@@ -12,9 +13,8 @@ const ResumeDownloadButton = () => {
         color="primary"
         startIcon={<DescriptionIcon />}
         className="external-links-button"
-        onClick={() => window.open('./ChristopherReynolds-SoftwareEngineer-2021_web.pdf', '_blank')}
       >
-        Resume (PDF)
+        <Link to="./ChristopherReynolds-SoftwareEngineer-2021_web.pdf" target="_blank" download>Download Resume (PDF)</Link>
       </Button>
     </div>
   );
