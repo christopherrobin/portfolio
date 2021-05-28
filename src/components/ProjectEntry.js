@@ -35,7 +35,8 @@ export default function ProjectEntry(props) {
         aria-describedby="simple-modal-description"
       >
         <Paper className="project-modal" elevation={3}>
-            This is paper.
+            <h4>{title}</h4>
+            <p>{description}</p>
         </Paper>
       </Modal>
     </div>
