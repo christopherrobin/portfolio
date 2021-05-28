@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Row, Col, Spinner } from "reactstrap";
+import { Container, Row, Col } from "reactstrap";
 import Menu from "./components/menu2";
 import {
   BrowserRouter as Router,
@@ -12,7 +12,7 @@ import DescriptionIcon from "@material-ui/icons/Description";
 // "Pages"
 import BusinessCard from "./components/BusinessCard";
 import Resume from "./components/Resume";
-import Projects from "./components/Projects";
+// import Projects from "./components/Projects";
 
 import Fade from "./components/Fade";
 import "./App.scss";
@@ -130,49 +130,44 @@ const App = () => {
               <Resume />
             </Route>
 
-            <Route exact path="/projects">
-              <Menu />
-              <Fade childComponent={<Projects />} />
-            </Route>
-
             <Route exact path="/contact">
               <Menu />
               <Container id="Contact-Page--Container">
                 <Row>
-                  <Col xs={12} style={{ textAlign: "center" }}>
+                  <Col xs={12}>
                     <Fade
                       childComponent={
                         <div>
                           <a
-                            alt=""
-                            href="http://github.com/christopherrobin"
+                            alt="Email"
+                            href="mailto:christopher@spaceagebrains.com"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                            <Button block>
-                              <EmailIcon /> christopher (at) mail.com
+                            <Button variant="contained" color="primary" startIcon={<EmailIcon />}>
+                              christopher (at) spaceagebrains.com
                             </Button>
                           </a>
                           <br />
                           <a
-                            alt=""
+                            alt="GitHub"
                             href="http://github.com/christopherrobin"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                            <Button block>
-                              <GitHubIcon /> @ChristopherRobin
+                            <Button variant="contained" color="primary" startIcon={<GitHubIcon />}>
+                              @ChristopherRobin
                             </Button>
                           </a>
                           <br />
                           <a
-                            alt=""
+                            alt="Linked In"
                             href="https://www.linkedin.com/in/christopherrr"
                             target="_blank"
                             rel="noopener noreferrer"
                           >
-                            <Button block>
-                              <LinkedInIcon /> @Christopherrr
+                            <Button startIcon={<LinkedInIcon />} variant="contained" color="primary">
+                              @Christopherrr
                             </Button>
                           </a>
                         </div>
