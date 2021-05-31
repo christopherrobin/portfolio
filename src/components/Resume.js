@@ -1,13 +1,19 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import { HashLink as Link } from 'react-router-hash-link';
 import ResumeDownloadButton from "./ResumeDownloadButton";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import Fade from "./Fade";
 import "./Resume.scss";
 
 export default function Resume() {
+  if(window.pageYOffset){
+  console.log('user is NOT at top of page')
+  }
   return (
     <div className="wrapper">
+    {
+      window.pageYOffset ? 'user is NOT at top' : 'user IS at top'
+    }
       <Fade
         childComponent={
           <Container style={{ marginBottom: '3em'}}>
@@ -21,11 +27,11 @@ export default function Resume() {
               <Col xs={12}>
                 <div id="quick-nav">
                   Jump to:&nbsp;
-                  <Link to="/resume#angi">Angi</Link>,&nbsp;
-                  <Link to="/resume#hhgregg">HH Gregg</Link>,&nbsp;
-                  <Link to="/resume#ww">Worm's Way Group</Link>,&nbsp;
-                  <Link to="/resume#hope">HOPE Foundation</Link>,&nbsp;
-                  <Link to="/resume#iufoundation">IU Foundation</Link>
+                  <AnchorLink href="#angi">Angi</AnchorLink>,&nbsp;
+                  <AnchorLink href="#hhgregg">HH Gregg</AnchorLink>,&nbsp;
+                  <AnchorLink href="#ww">Worm's Way Group</AnchorLink>,&nbsp;
+                  <AnchorLink href="#hope">HOPE Foundation</AnchorLink>,&nbsp;
+                  <AnchorLink href="#iufoundation">IU Foundation</AnchorLink>
                 </div>
                 <div className="banner-title">
                   <h2>Summary</h2>
@@ -45,7 +51,7 @@ export default function Resume() {
                     HTML 5 / CSS 3 ( + Bootstrap, Material UI, Tailwind, SASS, LESS)
                   </li>
                   <li>
-                    JavaScript (ECMAScript, Babel, Next JS, NodeJS, React,
+                    JavaScript (ECMAScript, Babel, Next.js, NodeJS, React,
                     Redux, Underscore/Lodash, Webpack, Angular)
                   </li>
                   <li>C# / C++ / ASP.NET</li>
