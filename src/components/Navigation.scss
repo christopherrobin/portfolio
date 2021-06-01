@@ -11,17 +11,12 @@
     .selected-menu-item {
         button.btn.btn-secondary {
             border-bottom: 0.5em solid $primary-blue;
-            // border-top: 0.5em solid $primary-dark;
-            // background: $secondary;
             color: $primary-blue;
-            // height: 6.5em;
-            // width: 6.5em;
             font-weight: 700;
             box-shadow: none;
             transition: width .3s, height .3s, transform .3s;
             transition-timing-function: ease;
             border-radius: 0;
-            // padding-bottom: 0;
 
             svg.MuiSvgIcon-root {
                 fill: $primary-dark;
@@ -34,11 +29,6 @@
         color: $primary-gray;
         border: none;
         background: #fff;
-        /*border-radius: 50%;
-        width: 5em;
-        height: 5em;*/
-        // margin-right: 1em;
-        // padding-bottom: 0.5em;
 
         svg.MuiSvgIcon-root {
             fill: $primary-gray;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
-import Menu from "./components/Menu";
+import Navigation from "./components/Navigation";
 import Button from "@material-ui/core/Button";
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import ToggleSwitch from '@material-ui/core/Switch';
@@ -77,17 +77,17 @@ const App = () => {
             </Route>
 
             <Route path="/hello">
-              <Menu />
+              <Navigation />
               <Hello />
             </Route>
 
             <Route exact path="/resume">
-              <Menu />
+              <Navigation />
               <Resume />
             </Route>
 
             <Route exact path="/contact">
-              <Menu />
+              <Navigation />
               <Contact />
             </Route>
           </Switch>

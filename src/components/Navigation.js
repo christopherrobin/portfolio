@@ -2,9 +2,9 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import { Container, Row, Col, ButtonToggle } from "reactstrap";
 
-import './Menu.scss';
+import './Navigation.scss';
 
-const Menu = props => {
+const Navigation = props => {
     return (
         <Container id="Menu-Component--Container">
             <Row>
@@ -21,4 +21,4 @@ const Menu = props => {
 	);
 };
 
-export default Menu;
+export default Navigation;
