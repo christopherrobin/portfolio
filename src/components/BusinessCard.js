@@ -25,20 +25,11 @@ export default function BusinessCard() {
           Christopher Reynolds
         </Typography>
 
-        <Typography variant="body2" component="p">
-          Senior Software Engineer with a focus on JavaScript and microservice
-          architecture that scales.
-        </Typography>
-
-        <Typography variant="body2" component="p">
-          <strong>Expert: </strong>JavaScript (ES6+), Node.js, React, Redux,
-          Next.js, TypeScript, HTML/CSS, Bootstrap, Material UI, jQuery
-        </Typography>
-
-        <Typography variant="body2" component="p">
-          <strong>Proficient: </strong> GraphQL, Scala, Java EE, C# .NET, PHP,
-          SQL/MySQL/NoSQL
-        </Typography>
+        <p>
+          Senior Software Engineer experienced in application design and development, translating business
+          requirements to technical specifications, project management, and microservice architecture seeks
+          a position which will leverage current and emerging technologies in order to pursue company goals.
+        </p>
 
         <Container>
           <Row style={{ marginTop: "1.5em" }}>
