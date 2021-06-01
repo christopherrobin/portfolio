@@ -21,7 +21,7 @@ class Resume extends React.Component {
               <Row>
                 <Col xs={12}>
                   <div id="quick-nav">
-                    Jump to:&nbsp;
+                    <div>Jump to:</div>
                     <AnchorLink href="#angi">Angi</AnchorLink>,&nbsp;
                     <AnchorLink href="#hhgregg">HH Gregg</AnchorLink>,&nbsp;
                     <AnchorLink href="#ww">Worm's Way Group</AnchorLink>,&nbsp;
@@ -88,8 +88,8 @@ class Resume extends React.Component {
                 <li>Coordinating with product owners, UX designers, customer service representatives, and outside parties to create and implement business requirements.</li>
                 <li>Responsible for creating and breaking down large project requests ("Epics" in Jira) into manageable stories, tasks, and sub-tasks so we can accurately groom, point, and deliver those projects on time.</li>
                 <li>Led the massive front-end re-branding effort from Angie's List to Angi for the Service Provider vertical. (and parts of other verticals)</li>
-                <li>I take professional growth seriously, I mentored many engineers with minimal enterprise level JavaScript experience to be successful and confident front-end engineers. </li>
-                <li>Participated as part of the transition team after the IAC acquisition and the following Home Advisor/Handy/Angie's List merger</li>
+                <li>I take professional growth seriously, I mentored many newcomers with minimal enterprise level JavaScript experience to be successful and confident front-end engineers. </li>
+                <li>Participated as part of the transition team after the IAC acquisition and the following Home Advisor/Handy/Angie's List merger.</li>
                 <li>
                   In 2016 I was part of the team that finished a multiple year initiative to drop the pay
                   wall, integrate a lead generation vertical, and migrate our

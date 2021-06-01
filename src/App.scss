@@ -91,12 +91,6 @@ path {
   font-weight: 700;
 }
 
-#Contact-Page--Container {
-  a:hover {
-    text-decoration: none;
-  }
-}
-
 .skill-logo {
   text-align: center;
   img {
@@ -129,7 +123,12 @@ ul {
 }
 
 #Contact-Page--Container {
-  text-align: center;
+  height: 100vh;
+
+  a:hover {
+    text-decoration: none;
+  }
+
   button {
     margin-bottom: 1em;
   }
