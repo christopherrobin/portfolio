@@ -4,6 +4,8 @@ import Button from "@material-ui/core/Button";
 import DescriptionIcon from "@material-ui/icons/Description";
 import Tooltip from '@material-ui/core/Tooltip';
 
+import resumePDF from './ChristopherReynolds_SeniorSoftwareEngineer_2021_web.pdf'
+
 const ResumeDownloadButton = () => {
   return (
     <div className="btn-resume-download">
@@ -17,7 +19,7 @@ const ResumeDownloadButton = () => {
           className="external-links-button"
           alt="Download My Resume"
         >
-          <Link to="./ChristopherReynolds_SeniorSoftwareEngineer_2021_web.pdf" target="_blank" download>Download Resume (PDF)</Link>
+          <Link to={resumePDF} target="_blank" download>Download Resume (PDF)</Link>
         </Button>
       </Tooltip>
     </div>
