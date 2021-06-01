@@ -6,6 +6,7 @@ import Button from "@material-ui/core/Button";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
+import TwitterIcon from '@material-ui/icons/Twitter';
 
 const Contact = () => {
   return (
@@ -62,6 +63,21 @@ const Contact = () => {
                     fullWidth
                   >
                     @Christopherrr
+                  </Button>
+                </a>
+                <a
+                  alt="Twitter"
+                  href="https://twitter.com/M4THBL45T3R"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Button
+                    startIcon={<TwitterIcon />}
+                    variant="contained"
+                    color="primary"
+                    fullWidth
+                  >
+                    @M4THBL45T3R
                   </Button>
                 </a>
               </div>
