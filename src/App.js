@@ -1,40 +1,65 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
-import Menu from "./components/menu2";
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
-import DescriptionIcon from "@material-ui/icons/Description";
+import Menu from "./components/Menu";
+import Hello from "./components/Hello";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 
 // "Pages"
-import BusinessCard from "./components/BusinessCard";
 import Resume from "./components/Resume";
 // import Projects from "./components/Projects";
 
 import Fade from "./components/Fade";
 import "./App.scss";
+import "./DarkMode.scss";
 
 import Button from "@material-ui/core/Button";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import ToggleSwitch from '@material-ui/core/Switch';
+import WbSunnyIcon from '@material-ui/icons/WbSunny';
+import NightsStayIcon from '@material-ui/icons/NightsStay';
+import Tooltip from '@material-ui/core/Tooltip';
+
 import "./components/Fade.scss";
 
 const App = () => {
   const [isLoading, setLoading] = useState(true);
+  const [isDark, setDark] = useState(false);
+
+  const toggleDark = () => setDark(!isDark);
 
   useEffect(() => {
     setLoading(false);
   }, []);
 
-  // console.log(isLoading);
+  console.log(isLoading);
 
   return (
-    <Container id="app-container">
+    <Container id="app-container" className={ isDark ? 'dark-mode' : null}>
       <div className="App">
+        <Container>
+          <Row>
+              <Col xs={12}>
+              <Tooltip title="Toggle light/dark theme">
+                  <Button id="dark-mode-toggle">
+                      <FormControlLabel
+                        control={
+                          <ToggleSwitch
+                            checked={isDark}
+                            onChange={toggleDark}
+                            name="toggleDarkMode"
+                            color="primary"
+                          />
+                        }
+                        label={isDark ? <NightsStayIcon /> : <WbSunnyIcon /> }
+                      />
+                  </Button>
+                  </Tooltip>
+              </Col>
+          </Row>
+        </Container>
         <Router>
           <Switch>
             <Route exact path="/">
@@ -43,85 +68,7 @@ const App = () => {
 
             <Route path="/hello">
               <Menu />
-              <Container>
-                <Row>
-                  <Col xs={12} md={6}>
-                    <Fade
-                      childComponent={
-                        <div>
-                          <h1>Hello! &#128075;</h1>
-                          <p>
-                            My name is Christopher, I'm a Software Engineer
-                            living in Indianapolis. I wrote my first line of
-                            code when I was 12 years old.{" "}
-                          </p>
-                          <p>
-                            I love creating technology that scales to millions
-                            of people while providing a powerful experience for
-                            both users and developers.
-                          </p>
-                          <p>
-                            I'm obsessed with JavaScript, functional
-                            programming, blockchain technology, strategy games,
-                            and music.
-                          </p>
-
-                          <div id="external-links-wrapper">
-                            <Row>
-                              <Col xs={12} lg={4}>
-                                <Button
-                                  target="_blank"
-                                  href="https://github.com/christopherrobin/"
-                                  variant="contained"
-                                  size="medium"
-                                  color="primary"
-                                  startIcon={<GitHubIcon />}
-                                  className="external-links-button"
-                                  fullWidth
-                                >
-                                  GitHub
-                                </Button>
-                              </Col>
-
-                              <Col xs={12} lg={4}>
-                                <Button
-                                  target="_blank"
-                                  href="https://www.linkedin.com/in/christopherrr/"
-                                  variant="contained"
-                                  size="medium"
-                                  color="primary"
-                                  startIcon={<LinkedInIcon />}
-                                  className="external-links-button"
-                                  fullWidth
-                                >
-                                  LinkedIn
-                                </Button>
-                              </Col>
-                              <Col xs={12} lg={4}>
-                                <Button
-                                  href="/resume"
-                                  variant="contained"
-                                  size="medium"
-                                  color="primary"
-                                  startIcon={<DescriptionIcon />}
-                                  className="external-links-button"
-                                  fullWidth
-                                >
-                                  Resume
-                                </Button>
-                              </Col>
-                            </Row>
-                          </div>
-                        </div>
-                      }
-                    />
-                  </Col>
-
-                  <Col xs={12} md={6}>
-                    <Fade childComponent={<BusinessCard />} />
-                  </Col>
-                </Row>
-              </Container>
+              <Hello />
             </Route>
 
             <Route exact path="/resume">

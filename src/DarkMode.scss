@@ -1,5 +1,40 @@
+@import "../src/variables.scss";
+
 .dark-mode.container {
-    background-color: red;
+    background-color: $primary-dark;
     color: #fff;
-    border: 5px solid yellow;
+
+    p {
+        color: #fff;
+    }
+
+    #business-card {
+        background: #1f1f1f;
+        color: #fff;
+    }
+
+    #dark-mode-toggle {
+        path {
+            color: #fff;
+        }
+    }
+
+    .banner-title {
+        color: #fff;
+        background: #1f1f1f;
+    }
+
+    // Menu
+    #Menu-Component--Container button.btn.btn-secondary {
+        color: #fff;
+        background: none;
+    }
+    
+    #Menu-Component--Container .selected-menu-item button.btn.btn-secondary {
+        border-bottom: .5em solid #fff;
+        color: #fff;
+        background: none;
+    }
+    
+    
 }

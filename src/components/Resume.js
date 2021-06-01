@@ -11,7 +11,7 @@ class Resume extends React.Component {
       <div className="wrapper">
         <Fade
           childComponent={
-            <Container style={{ marginBottom: '3em'}}>
+            <Container style={{ paddingBottom: '3em'}}>
               <Row>
                 <Col xs={12}>
                   <h1>Resume</h1>

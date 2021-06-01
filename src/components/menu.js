@@ -1,33 +1,24 @@
-import React, { useState } from "react";
-import MenuIcon from "@material-ui/icons/Menu";
-import CloseIcon from "@material-ui/icons/Close";
+import React from "react";
+import { NavLink } from "react-router-dom";
+import { Container, Row, Col, ButtonToggle } from "reactstrap";
 
-import { Container, Row, Col, Collapse, Button } from 'reactstrap';
+import './Menu.scss';
 
 const Menu = props => {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggle = () => setIsOpen(!isOpen);
-
-  return (
-    <div id="top-banner">
-
-    <Container>
-        <Row>
-            <Col xs={12}>
-                <Button color="info" onClick={toggle}>{isOpen ? <CloseIcon /> : <MenuIcon />}</Button>
-            </Col>
-        </Row>      
-
-        <Collapse isOpen={isOpen}>
-          <div id="menu">
-              <h1>Settings</h1>
-          </div>
-        </Collapse>
-
-      </Container>
-    </div>
-  );
+    return (
+        <Container id="Menu-Component--Container">
+            <Row>
+                <Col xs={12}>
+                    <div id="Menu-Component-SubNav">
+                        <NavLink to="/hello" activeClassName="selected-menu-item"><ButtonToggle color="secondary">Home</ButtonToggle></NavLink>
+                        <NavLink to="/resume" activeClassName="selected-menu-item"><ButtonToggle color="secondary">Resume</ButtonToggle></NavLink>
+                        {/*<NavLink to="/projects" activeClassName="selected-menu-item"><ButtonToggle color="secondary">Projects</ButtonToggle></NavLink> */}
+                        <NavLink to="/contact" activeClassName="selected-menu-item"><ButtonToggle color="secondary">Contact</ButtonToggle></NavLink>
+                    </div>
+                </Col>
+            </Row>
+        </Container>
+	);
 };
 
 export default Menu;
