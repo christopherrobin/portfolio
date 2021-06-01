@@ -1,7 +1,9 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
-import ResumeDownloadButton from "./ResumeDownloadButton";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import ResumeDownloadButton from "./ResumeDownloadButton";
+import Button from "@material-ui/core/Button";
+import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 import Fade from "./Fade";
 import "./Resume.scss";
 
@@ -275,6 +277,18 @@ class Resume extends React.Component {
               </div>
               <div>Associate of Applied Science (A.A.S)</div>
               <div>August 2007 - May 2009</div>
+
+              <div id="back-to-top" style={{ margin: '2em 0 1em 0', textAlign: 'center' }}>
+                <Button
+                  onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+                  variant="contained"
+                  color="primary"
+                  startIcon={<ArrowUpwardIcon />}
+                  disableElevation
+                >
+                  Back to Top
+                </Button>
+              </div>
               
             </Container>
           }
