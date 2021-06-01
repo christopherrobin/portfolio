@@ -17,7 +17,7 @@ const ResumeDownloadButton = () => {
           className="external-links-button"
           alt="Download My Resume"
         >
-          <Link to="./ChristopherReynolds-SoftwareEngineer-2021_web.pdf" target="_blank" download>Download Resume (PDF)</Link>
+          <Link to="./ChristopherReynolds_SeniorSoftwareEngineer_2021_web.pdf" target="_blank" download>Download Resume (PDF)</Link>
         </Button>
       </Tooltip>
     </div>
