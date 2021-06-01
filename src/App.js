@@ -1,28 +1,29 @@
 import React, { useState, useEffect } from "react";
 import { Container, Row, Col } from "reactstrap";
-import Menu from "./components/Menu";
-import Hello from "./components/Hello";
 import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
+import Menu from "./components/Menu";
+import Button from "@material-ui/core/Button";
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import ToggleSwitch from '@material-ui/core/Switch';
+import Tooltip from '@material-ui/core/Tooltip';
+import CircularProgress from '@material-ui/core/CircularProgress';
+import Fade from "./components/Fade";
 
 // "Pages"
 import Resume from "./components/Resume";
+import Hello from "./components/Hello";
 // import Projects from "./components/Projects";
 
-import Fade from "./components/Fade";
 import "./App.scss";
 import "./DarkMode.scss";
+import "./components/Fade.scss";
 
-import Button from "@material-ui/core/Button";
+// Material Icons
+import WbSunnyIcon from '@material-ui/icons/WbSunny';
+import NightsStayIcon from '@material-ui/icons/NightsStay';
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import ToggleSwitch from '@material-ui/core/Switch';
-import WbSunnyIcon from '@material-ui/icons/WbSunny';
-import NightsStayIcon from '@material-ui/icons/NightsStay';
-import Tooltip from '@material-ui/core/Tooltip';
-
-import "./components/Fade.scss";
 
 const App = () => {
   const [isLoading, setLoading] = useState(true);
@@ -37,7 +38,19 @@ const App = () => {
   console.log(isLoading);
 
   return (
+
     <Container id="app-container" className={ isDark ? 'dark-mode' : null}>
+    {
+      isLoading ?
+        <div id="pre-loader">
+          <Row>
+            <Col xs={12}>
+              <CircularProgress />
+              <p className="sub-title">Loading</p>
+            </Col>
+          </Row>
+        </div>
+        :
       <div className="App">
         <Container>
           <Row>
@@ -127,22 +140,9 @@ const App = () => {
           </Switch>
         </Router>
       </div>
+    }
     </Container>
   );
 };
 
 export default App;
-
-/*
-              {
-                isLoading ?
-                  <div id="pre-loader">
-                    <Row>
-                      <Col xs={12}>
-                        <Spinner color="info" id="spinner" />
-                        <p className="sub-title">Loading</p>
-                      </Col>
-                    </Row>
-                  </div> : null
-              }
-*/
