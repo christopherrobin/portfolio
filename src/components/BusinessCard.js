@@ -7,10 +7,10 @@ import CardMedia from '@material-ui/core/CardMedia';
 
 // Image Assets
 import beachPicture from ".././images/beach.jpg";
-import ReactLogo from ".././react.svg";
-import NodeLogo from ".././node.svg";
-import GraphLogo from ".././graphql.png";
-import ReduxLogo from ".././redux.svg";
+import ReactLogo from ".././images/react.svg";
+import NodeLogo from ".././images/node.svg";
+import GraphLogo from ".././images/graphql.png";
+import ReduxLogo from ".././images/redux.svg";
 
 export default function BusinessCard() {
   return (
