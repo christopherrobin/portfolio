@@ -32,10 +32,7 @@ const App = () => {
     setLoading(false);
   }, []);
 
-  console.log(isLoading);
-
   return (
-
     <Container id="app-container" className={ isDark ? 'dark-mode' : null}>
     {
       isLoading ?
