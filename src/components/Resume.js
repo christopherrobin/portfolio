@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import ResumeDownloadButton from "./ResumeDownloadButton";
+// import ResumeDownloadButton from "./ResumeDownloadButton";
 import Button from "@material-ui/core/Button";
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 import Fade from "./Fade";
@@ -17,7 +17,9 @@ class Resume extends React.Component {
               <Row>
                 <Col xs={12}>
                   <h1>Resume</h1>
-                  <ResumeDownloadButton />
+                  {// <ResumeDownloadButton />
+                  }
+                  <p>Please get in touch for a pdf version with my personal information and references.</p>
                 </Col>
               </Row>
               <Row>
@@ -60,6 +62,7 @@ class Resume extends React.Component {
                     <li>WCAG 2.2 and ADA Compliance</li>
                     <li>UI / UX Development and Testing</li>
                     <li>Agile (Scrum) Software Development</li>
+                    <li>Continuous delivery using tools like AWS, GitHub, CircleCi, Docker, and Jenkins</li>
                   </ul>
 
                   <p>
@@ -87,6 +90,7 @@ class Resume extends React.Component {
                   of users.
                 </li>
                 <li>Responsible for creating, maintaining, and decommissioning a collection of distributed and loosely coupled apps. (Microservice architecture)</li>
+                <li>At Angi we followed a continuous delivery approach using tools like AWS, GitHub, CircleCi, Docker, and Jenkins which allowed us to constantly deploy work throughout the day safely.</li>
                 <li>Coordinating with product owners, UX designers, customer service representatives, and outside parties to create and implement business requirements.</li>
                 <li>Responsible for creating and breaking down large project requests ("Epics" in Jira) into manageable stories, tasks, and sub-tasks so we can accurately groom, point, and deliver those projects on time.</li>
                 <li>Led the massive front-end re-branding effort from Angie's List to Angi for the Service Provider vertical. (and parts of other verticals)</li>

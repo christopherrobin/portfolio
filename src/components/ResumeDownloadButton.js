@@ -15,10 +15,8 @@ const ResumeDownloadButton = () => {
           startIcon={<DescriptionIcon />}
           className="external-links-button"
           alt="Download My Resume"
-          onClick={() => window.open('./ChristopherReynolds_SeniorSoftwareEngineer_2021_web.pdf', 'blank')}
         >
-          
-          Download Resume (PDF)
+          <a href='./ChristopherReynolds_SeniorSoftwareEngineer_2021_web.pdf' target="_blank">Download Resume (PDF)</a>
         </Button>
       </Tooltip>
     </div>
