@@ -11,10 +11,17 @@ export default function Projects() {
         <Container id="projects-container">
             <Row>
                 <Col xs={12}>
+                    <h1>Personal Projects</h1>
                     <ProjectEntry
-                        title="Title"
+                        title="Indy Fuel Hub"
                         image={someImage}
-                        description="Angi is your home for everything home— a comprehensive solution for all your home needs. From repairs and renovations to products and financing, Angi is transforming every touch point in the customer journey. With over 25 years of experience and a network of nearly 250,000 pros, we have helped more than 150 million people with their home needs. Angi is your partner for every part of your home care journey."
+                        description="The Indy Fuel Hub is a set of user-friendly tools for following the Indy Fuel. Minor league hockey can sometimes be hard to keep up with due to the smaller fan base and frequency of player trades. Information travels slow and isn’t always readily available. This app fixes that by aggregating data from 3 different sources and presenting them in an organized and focused manner for users that want to follow their favorite ECHL hockey team. Current features are spoiler free game results, upcoming schedule information with ticket sales links, and all incoming/outgoing Indy Fuel roster moves."
+                        imageAltText="image alt text"
+                    />
+                    <ProjectEntry
+                        title="Cryptalyzer"
+                        image={someImage}
+                        description="Cryptalyzer description goes here"
                         imageAltText="image alt text"
                     />
                 </Col>

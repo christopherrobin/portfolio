@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import { Container, Row, Col } from "reactstrap";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
 // import ResumeDownloadButton from "./ResumeDownloadButton";
@@ -17,9 +18,10 @@ class Resume extends React.Component {
               <Row>
                 <Col xs={12}>
                   <h1>Resume</h1>
-                  {// <ResumeDownloadButton />
+                  {
+                    // <ResumeDownloadButton />
                   }
-                  <p>Please get in touch for a pdf version with my personal information and references.</p>
+                  <p>Please <Link to="/contact">get in touch</Link> for a PDF version with my personal information and references.</p>
                 </Col>
               </Row>
               <Row>
