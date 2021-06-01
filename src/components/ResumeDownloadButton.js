@@ -1,10 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Button from "@material-ui/core/Button";
 import DescriptionIcon from "@material-ui/icons/Description";
 import Tooltip from '@material-ui/core/Tooltip';
-
-import resumePDF from './ChristopherReynolds_SeniorSoftwareEngineer_2021_web.pdf'
 
 const ResumeDownloadButton = () => {
   return (
@@ -19,7 +16,7 @@ const ResumeDownloadButton = () => {
           className="external-links-button"
           alt="Download My Resume"
         >
-          <Link to={resumePDF} target="_blank" download>Download Resume (PDF)</Link>
+          <a href='./ChristopherReynolds_SeniorSoftwareEngineer_2021_web.pdf' target="_blank">Download Resume (PDF)</a>
         </Button>
       </Tooltip>
     </div>
