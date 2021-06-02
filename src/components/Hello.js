@@ -29,6 +29,10 @@ const Hello = () => {
                         both users and developers.
                         </p>
                         <p>
+                        My goal is writing, maintaining, and code reviewing JavaScript using
+                        the DRY principle that is clean, reusable, and resilient.
+                        </p>
+                        <p>
                         I'm obsessed with JavaScript, functional
                         programming, blockchain technology, strategy games,
                         and music.
