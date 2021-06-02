@@ -176,3 +176,8 @@ a.MuiButtonBase-root.MuiButton-root.MuiButton-contained.external-links-button.Mu
 button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary {
   color: #fff;
 }
+
+#Contact-Page--Image {
+  border: 1px solid $light-gray;
+  box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+}

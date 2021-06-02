@@ -8,11 +8,13 @@ import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import EmailIcon from "@material-ui/icons/Email";
 import TwitterIcon from '@material-ui/icons/Twitter';
 
+import oceanPicture from ".././images/beach2.jpg";
+
 const Contact = () => {
   return (
     <Container id="Contact-Page--Container">
       <Row>
-        <Col xs={12}>
+        <Col xs={12} lg={6}>
           <Fade
             childComponent={
               <div>
@@ -83,6 +85,11 @@ const Contact = () => {
               </div>
             }
           />
+        </Col>
+        <Col xs={12} lg={6}>
+          <div style={{ textAlign: 'center' }}>
+            <img id="Contact-Page--Image" src={oceanPicture} alt="Christopher in front of the ocean" />
+          </div>
         </Col>
       </Row>
     </Container>
