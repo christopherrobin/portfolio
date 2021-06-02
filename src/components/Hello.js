@@ -29,7 +29,7 @@ const Hello = () => {
                         both users and developers.
                         </p>
                         <p>
-                        My goal is writing, maintaining, and code reviewing DRY JavaScript using
+                        My goal is writing, maintaining, and code reviewing DRY JavaScript
                         that is clean, reusable, and resilient.
                         </p>
                         <p>
