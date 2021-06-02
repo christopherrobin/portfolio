@@ -64,7 +64,7 @@ class Resume extends React.Component {
                     <li>WCAG 2.2 and ADA Compliance</li>
                     <li>UI / UX Development and Testing</li>
                     <li>Agile (Scrum) Software Development</li>
-                    <li>Continuous delivery using tools like AWS, GitHub, CircleCi, Docker, and Jenkins</li>
+                    <li>Continuous delivery using tools like AWS, GitHub, CircleCI, Docker, and Jenkins</li>
                   </ul>
 
                   <p>
@@ -92,7 +92,7 @@ class Resume extends React.Component {
                   of users.
                 </li>
                 <li>Responsible for creating, maintaining, and decommissioning a collection of distributed and loosely coupled apps. (Microservice architecture)</li>
-                <li>At Angi we followed a continuous delivery approach using tools like AWS, GitHub, CircleCi, Docker, and Jenkins which allowed us to constantly deploy work throughout the day safely.</li>
+                <li>At Angi we followed a continuous delivery approach using tools like AWS, GitHub, CircleCI, Docker, and Jenkins which allowed us to constantly deploy work throughout the day safely.</li>
                 <li>Coordinating with product owners, UX designers, customer service representatives, and outside parties to create and implement business requirements.</li>
                 <li>Responsible for creating and breaking down large project requests ("Epics" in Jira) into manageable stories, tasks, and sub-tasks so we can accurately groom, point, and deliver those projects on time.</li>
                 <li>Led the massive front-end re-branding effort from Angie's List to Angi for the Service Provider vertical. (and parts of other verticals)</li>
