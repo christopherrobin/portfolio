@@ -35,7 +35,7 @@ const Contact = () => {
                     christopher (at) spaceagebrains.com
                   </Button>
                 </a>
-                <br />
+
                 <a
                   alt="GitHub"
                   href="http://github.com/christopherrobin"
@@ -51,7 +51,7 @@ const Contact = () => {
                     @ChristopherRobin
                   </Button>
                 </a>
-                <br />
+
                 <a
                   alt="Linked In"
                   href="https://www.linkedin.com/in/christopherrr"
