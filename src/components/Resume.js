@@ -17,7 +17,10 @@ class Resume extends React.Component {
               <Row>
                 <Col xs={12}>
                   <h1>Resume</h1>
-                  <ResumeDownloadButton />
+                  {
+                    // TODO: serve static pdf for download
+                    // <ResumeDownloadButton />
+                  }
                 </Col>
               </Row>
               <Row>
