@@ -244,7 +244,7 @@ class Resume extends React.Component {
                   Classic
                 </li>
                 <li>
-                  Spam-proofed all e-mail addresses and contact forms using
+                  Spam-proofed all email addresses and contact forms using
                   JavaScript
                 </li>
                 <li>
