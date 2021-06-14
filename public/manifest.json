@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Portfolio",
+  "name": "Christopher Reynolds Portfolio",
   "icons": [
     {
       "src": "favicon.ico",
@@ -16,6 +16,12 @@
       "src": "logo512.png",
       "type": "image/png",
       "sizes": "512x512"
+    }
+  ],
+  "pdf": [
+    {
+      "src": "ChristopherReynolds_SeniorSoftwareEngineer_2021_web.pdf",
+      "type": "application/pdf"
     }
   ],
   "start_url": ".",

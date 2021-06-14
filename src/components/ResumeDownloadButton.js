@@ -4,11 +4,15 @@ import DescriptionIcon from "@material-ui/icons/Description";
 import Tooltip from '@material-ui/core/Tooltip';
 import FileSaver from 'file-saver';
 
+import { get } from 'lodash';
+
 const ResumeDownloadButton = () => {
+
+  console.log(get(process, 'env.PUBLIC_URL', false));
 
   const saveFile = () => {
     FileSaver.saveAs(
-      "./ChristopherReynolds_SeniorSoftwareEngineer_2021_web.pdf",
+      './ChristopherReynolds_SeniorSoftwareEngineer_2021_web.pdf',
       "ChristopherReynolds_SeniorSoftwareEngineer.pdf"
     );
   };
@@ -29,6 +33,7 @@ const ResumeDownloadButton = () => {
           Download Resume (PDF)
         </Button>
       </Tooltip>
+      <a href='/ChristopherReynolds_SeniorSoftwareEngineer.pdf'>test</a>
     </div>
   );
 }
