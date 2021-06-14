@@ -179,7 +179,7 @@ class Resume extends React.Component {
                   to C# .NET MVC in 7 month project.
                 </li>
                 <li>
-                  Technical analysis, maintenence, and support for Google
+                  Technical analysis, maintenance, and support for Google
                   Analytics and similar tagging/tracking software.
                 </li>
                 <li>
