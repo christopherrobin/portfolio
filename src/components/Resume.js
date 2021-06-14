@@ -1,8 +1,7 @@
 import React from "react";
-import { Link } from 'react-router-dom';
 import { Container, Row, Col } from "reactstrap";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-// import ResumeDownloadButton from "./ResumeDownloadButton";
+import ResumeDownloadButton from "./ResumeDownloadButton";
 import Button from "@material-ui/core/Button";
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 import Fade from "./Fade";
@@ -18,10 +17,7 @@ class Resume extends React.Component {
               <Row>
                 <Col xs={12}>
                   <h1>Resume</h1>
-                  {
-                    // <ResumeDownloadButton />
-                  }
-                  <p>Please <Link to="/contact">get in touch</Link> for a PDF version with my personal information and references.</p>
+                  <ResumeDownloadButton />
                 </Col>
               </Row>
               <Row>
