@@ -1,8 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "reactstrap";
 import AnchorLink from 'react-anchor-link-smooth-scroll'
-import ResumeDownloadButton from "./ResumeDownloadButton";
-import Button from "@material-ui/core/Button";
+import {Button, Typography} from "@material-ui/core";
 import ArrowUpwardIcon from '@material-ui/icons/ArrowUpward';
 import Fade from "./Fade";
 import "./Resume.scss";
@@ -16,17 +15,14 @@ class Resume extends React.Component {
             <Container style={{ paddingBottom: '3em'}}>
               <Row>
                 <Col xs={12}>
-                  <h1>Resume</h1>
-                  {
-                    // TODO: serve static pdf for download
-                    // <ResumeDownloadButton />
-                  }
+                  <Typography variant="h3" component="h1">Resume</Typography>
                 </Col>
               </Row>
               <Row>
                 <Col xs={12}>
                   <div id="quick-nav">
                     <div>Jump to:</div>
+                    <AnchorLink href="#boom">Boom</AnchorLink>,&nbsp;
                     <AnchorLink href="#angi">Angi</AnchorLink>,&nbsp;
                     <AnchorLink href="#hhgregg">HH Gregg</AnchorLink>,&nbsp;
                     <AnchorLink href="#ww">Worm's Way Group</AnchorLink>,&nbsp;
@@ -38,17 +34,16 @@ class Resume extends React.Component {
                   </div>
                   <h3>Expert</h3>
                   <p>
-                    JavaScript (ES6+), Node.js, React, Redux, Next.js, TypeScript,
-                    HTML/CSS, Bootstrap, Material UI, jQuery (&#129326;)
+                  JavaScript (ES6+), Node.js, React, TypeScript, Next.js, Redux, ESLint, Flow, Automated Unit Testing (Mocha, Jest, Chai, Sinon, Selenium), HTML/CSS (+Bootstrap, Material UI, Tailwind, SASS), Google Cloud Platform, AWS
                   </p>
 
                   <h3>Proficient</h3>
-                  <p>GraphQL, Scala, Java EE, C# .NET, PHP, SQL/MySQL/NoSQL</p>
+                  <p>GraphQL, Scala, Redis, Kubernetes, Java EE, C# .NET, PHP, SQL/MySQL/NoSQL</p>
 
                   <h3>Summary</h3>
                   <ul>
                     <li>
-                      HTML 5 / CSS 3 ( + Bootstrap, Material UI, Tailwind, SASS, LESS)
+                      HTML 5 / CSS 3 ( + Material UI, Bootstrap, Tailwind, SASS, LESS)
                     </li>
                     <li>
                       JavaScript (ECMAScript, Babel, Next.js, NodeJS, React,
@@ -78,6 +73,21 @@ class Resume extends React.Component {
               <div className="banner-title">
                 <h2>Professional Experience</h2>
               </div>
+              <div id="boom">
+                <strong>Software Engineer at Boom Entertainment</strong>
+              </div>
+              <em>August 2021</em>
+              <div>JavaScript, React, TypeScript, Redux, Material-UI, Node.js, Next.js, Craco, SWC, Jest, ESLint, Husky</div>
+              <ul>
+                <li>
+                  Lead software engineer for front and back end development on the internal operations application at Boom, a tech company that works with professional sports leagues and large media companies. (NBC, NFL, YES, Barstool, NASCAR, CHIRP)
+                </li>
+                <li>My primary role has been writing clean and reusable JavaScript using the principles of functional programming, immutable data, and unidirectional data flow that can scale to millions of users.</li>
+                <li>Responsible for creating, maintaining, and reviewing pull requests and a collection of distributed apps in our micro service architecture.</li>
+                <li>Coordinating with product owners, UX designers, customer service representatives, and outside parties to create and implement business requirements.</li>
+                <li>Responsible for creating and breaking down large, complex project requests into manageable stories, tasks, and sub-tasks so we can accurately groom, point, and deliver those projects on time</li>
+              </ul>
+
               <div id="angi">
                 <strong>Senior Software Engineer at Angi/Angie's List</strong>
               </div>
@@ -85,15 +95,11 @@ class Resume extends React.Component {
               <div>JavaScript (ES6+), Node.js, React, Redux, Next.js, TypeScript, Scala, Bootstrap, WCAG 2.2 and ADA Compliance</div>
               <ul>
                 <li>
-                  My primary role has been writing clean and reusable JavaScript
-                  using the principles of functional programming, immutable
-                  data, and unidirectional data flow that can scale to millions
-                  of users.
+                  Senior software engineer leading front end intiatives, writing clean and reusable JavaScript, and mentoring junior developers.
                 </li>
                 <li>Responsible for creating, maintaining, and decommissioning a collection of distributed and loosely coupled apps. (Microservice architecture)</li>
                 <li>At Angi we followed a continuous delivery approach using tools like AWS, GitHub, CircleCI, Docker, and Jenkins which allowed us to constantly deploy work throughout the day safely.</li>
-                <li>Coordinating with product owners, UX designers, customer service representatives, and outside parties to create and implement business requirements.</li>
-                <li>Responsible for creating and breaking down large project requests ("Epics" in Jira) into manageable stories, tasks, and sub-tasks so we can accurately groom, point, and deliver those projects on time.</li>
+                <li>Responsible for creating and breaking down large project requests ("Epics" in Jira) into manageable stories, tasks, and sub-tasks so we can accurately groom, estimate, and deliver those projects on time.</li>
                 <li>Led the massive front-end re-branding effort from Angie's List to Angi for the Service Provider vertical. (and parts of other verticals)</li>
                 <li>I take professional growth seriously, I mentored many newcomers with minimal enterprise level JavaScript experience to be successful and confident front-end engineers. Part of the experience is also giving constructive feedback through development help, code reviews, and retrospectives.</li>
                 <li>Participated as part of the transition team after the IAC acquisition and the following Home Advisor/Handy/Angie's List merger.</li>
