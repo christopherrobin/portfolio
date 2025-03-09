@@ -22,6 +22,7 @@ class Resume extends React.Component {
                 <Col xs={12}>
                   <div id="quick-nav">
                     <div>Jump to:</div>
+                    <AnchorLink href="#sportradar">Sportradar</AnchorLink>,&nbsp;
                     <AnchorLink href="#boom">Boom</AnchorLink>,&nbsp;
                     <AnchorLink href="#angi">Angi</AnchorLink>,&nbsp;
                     <AnchorLink href="#hhgregg">HH Gregg</AnchorLink>,&nbsp;
@@ -34,11 +35,11 @@ class Resume extends React.Component {
                   </div>
                   <h3>Expert</h3>
                   <p>
-                  JavaScript (ES6+), Node.js, React, TypeScript, Next.js, Redux, ESLint, Flow, Automated Unit Testing (Mocha, Jest, Chai, Sinon, Selenium), HTML/CSS (+Bootstrap, Material UI, Tailwind, SASS), Google Cloud Platform, AWS
+                  ECMAScript (ES6+), Node.js, React, GraphQL, Redux, Next.js, TypeScript, ESLint, Automated Unit Testing (Mocha, Jest, Chai, Sinon, Selenium), HTML/CSS (+Bootstrap, Material-UI, Tailwind, SASS), AWS (EC2, S3, RDS, Lambdas, DynamoDB, CloudFront, IAM, CloudWatch), Google Cloud Platform
                   </p>
 
                   <h3>Proficient</h3>
-                  <p>GraphQL, Scala, Redis, Kubernetes, Java EE, C# .NET, PHP, SQL/MySQL/NoSQL</p>
+                  <p>Scala, Redis, Kubernetes, Ruby, Java EE, C# .NET, PHP, SQL/MySQL/NoSQL</p>
 
                   <h3>Summary</h3>
                   <ul>
@@ -47,10 +48,10 @@ class Resume extends React.Component {
                     </li>
                     <li>
                       JavaScript (ECMAScript, Babel, Next.js, NodeJS, React,
-                      Redux, Underscore/Lodash, Webpack, Angular)
+                      Redux, Underscore/Lodash, Webpack, Apollo GraphQL)
                     </li>
                     <li>C# / C++ / ASP.NET</li>
-                    <li>Java EE, JSTL, Scala</li>
+                    <li>Java EE, JSTL, Scala, Ruby</li>
                     <li>SQL / MySQL / NoSQL</li>
                     <li>
                       Automated Unit Testing (Mocha, Jest, Chai, Sinon, Selenium)
@@ -62,10 +63,8 @@ class Resume extends React.Component {
                   </ul>
 
                   <p>
-                    + Github & SVN, Optimizely, Akamai, Segment, Google
-                    Apps/AdSense/Analytics, Adobe Dynamic Tag Management, IBM
-                    WebSphere Commerce, Confluence, JIRA, Cryptocurrency and
-                    blockchain technology
+                    + Github, Optimizely, Akamai, Segment, Google
+                    Apps/AdSense/Analytics, Adobe Dynamic Tag Management, Confluence, JIRA, Blockchain technology
                   </p>
                 </Col>
               </Row>
@@ -73,41 +72,49 @@ class Resume extends React.Component {
               <div className="banner-title">
                 <h2>Professional Experience</h2>
               </div>
+              <div id="sportradar">
+                <strong>Senior Software Engineer at Sportradar</strong>
+              </div>
+              <em>September 2022 - Present</em>
+              <div>Node.js, React, TypeScript, Apollo GraphQL, Tailwind, Material-UI, Recharts, D3, AWS Services (EC2, Lambda, DynamoDB, S3, IAM, CloudWatch, and more)</div>
+              <ul>
+                <li>
+                  Leading frontend development as senior engineer for the Delivery team, establishing robust patterns and tooling adopted across the US Media development organization
+                </li>
+                <li>Architected systems handling billions of daily data points through distributed microservice architecture and multiple frontend services</li>
+                <li>Served as Frontend architect for the Sportradar Developer Portal, enabling our client engineers to manage their API usage and access real-time analytics</li>
+                <li>Designed and implemented scalable JavaScript solutions using functional programming principles, immutable data patterns, and unidirectional data flow for applications serving millions of users</li>
+                <li>Maintained code quality through creation, review, and maintenance of distributed applications across the microservice ecosystem</li>
+                <li>Collaborated cross-functionally with product owners, UX designers, customer service representatives, and external stakeholders to translate business requirements into technical solutions</li>
+                <li>Led project management efforts by decomposing complex initiatives into manageable stories and tasks, enabling accurate estimation and on-time delivery</li>
+              </ul>
+
               <div id="boom">
                 <strong>Software Engineer at Boom Entertainment</strong>
               </div>
-              <em>August 2021</em>
+              <em>August 2021 - September 2022</em>
               <div>JavaScript, React, TypeScript, Redux, Material-UI, Node.js, Next.js, Craco, SWC, Jest, ESLint, Husky</div>
               <ul>
                 <li>
-                  Lead software engineer for front and back end development on the internal operations application at Boom, a tech company that works with professional sports leagues and large media companies. (NBC, NFL, YES, Barstool, NASCAR, CHIRP)
+                  Software engineer leading front and back end development for the internal operations application at Boom, a tech company that works with professional sports leagues and large media companies. (NBC, NFL, YES, Barstool, Chirp Golf)
                 </li>
-                <li>My primary role has been writing clean and reusable JavaScript using the principles of functional programming, immutable data, and unidirectional data flow that can scale to millions of users.</li>
-                <li>Responsible for creating, maintaining, and reviewing pull requests and a collection of distributed apps in our micro service architecture.</li>
-                <li>Coordinating with product owners, UX designers, customer service representatives, and outside parties to create and implement business requirements.</li>
-                <li>Responsible for creating and breaking down large, complex project requests into manageable stories, tasks, and sub-tasks so we can accurately groom, point, and deliver those projects on time</li>
+                <li>Worked closely with the Sportradar API to create and maintain a robust collection of applications and workflows that are pivotal to Boom's success</li>
+                <li>Lead and architected initiatives for outside vendors that were used by millions of people and distributed to viewers of NBC, CBS, etc.</li>
               </ul>
 
               <div id="angi">
                 <strong>Senior Software Engineer at Angi/Angie's List</strong>
               </div>
-              <em>July 2015 – May 2021</em>
-              <div>JavaScript (ES6+), Node.js, React, Redux, Next.js, TypeScript, Scala, Bootstrap, WCAG 2.2 and ADA Compliance</div>
+              <em>July 2015 – June 2021</em>
+              <div>JavaScript (ES6+), React, Redux, Next.js, Typescript, Node.js, Scala, Bootstrap, SASS</div>
               <ul>
                 <li>
-                  Senior software engineer leading front end intiatives, writing clean and reusable JavaScript, and mentoring junior developers.
+                  Senior software engineer leading front-end initiatives, writing clean and reusable JavaScript, and mentoring junior developers
                 </li>
-                <li>Responsible for creating, maintaining, and decommissioning a collection of distributed and loosely coupled apps. (Microservice architecture)</li>
-                <li>At Angi we followed a continuous delivery approach using tools like AWS, GitHub, CircleCI, Docker, and Jenkins which allowed us to constantly deploy work throughout the day safely.</li>
-                <li>Responsible for creating and breaking down large project requests ("Epics" in Jira) into manageable stories, tasks, and sub-tasks so we can accurately groom, estimate, and deliver those projects on time.</li>
-                <li>Led the massive front-end re-branding effort from Angie's List to Angi for the Service Provider vertical. (and parts of other verticals)</li>
-                <li>I take professional growth seriously, I mentored many newcomers with minimal enterprise level JavaScript experience to be successful and confident front-end engineers. Part of the experience is also giving constructive feedback through development help, code reviews, and retrospectives.</li>
-                <li>Participated as part of the transition team after the IAC acquisition and the following Home Advisor/Handy/Angie's List merger.</li>
-                <li>
-                  In 2016 I was part of the team that finished a multiple year initiative to drop the pay
-                  wall, integrate a lead generation vertical, and migrate our
-                  website to a completely new state of the art platform.
-                </li>
+                <li>Led a massive front-end rebranding effort from Angie's List to Angi</li>
+                <li>Responsible for giving constructive feedback through development help, code reviews, and retrospectives to less experienced engineers</li>
+                <li>Participated as part of the transition team after the IAC acquisition and the following Home Advisor/Handy/Angie's List merger</li>
+                <li>In 2016 I was part of the team that finished a multiple year initiative to drop the pay wall, integrate a lead generation vertical, and migrate our website to a completely new state-of-the-art platform</li>
               </ul>
 
               <div id="hhgregg">
@@ -134,7 +141,7 @@ class Resume extends React.Component {
                 </li>
                 <li>
                   Senior Front-End Developer for the 2015 redesign of hhgregg.com
-                  which includes a movement to a responsive design.
+                  which included a focus on responsive, mobile first design
                 </li>
                 <li>
                   The collection, measurement, analysis, and reporting of web data
@@ -179,9 +186,9 @@ class Resume extends React.Component {
               </div>
               <ul>
                 <li>
-                  Worked extensively with database administrator, marketing teams,
+                  Worked extensively with database administrators, marketing teams,
                   and our back-end engineer to convert two Visual Basic websites
-                  to C# .NET MVC in 7 month project.
+                  to C# .NET MVC
                 </li>
                 <li>
                   Technical analysis, maintenance, and support for Google
@@ -230,10 +237,6 @@ class Resume extends React.Component {
                   Responsible for creating online systems to handle streaming
                   video conferences, press events, and video workshops.
                 </li>
-                <li>
-                  Created and oversaw the sending of HOPE's monthly newsletter to
-                  hundreds of thousands of subscribers.
-                </li>
               </ul>
 
               <div id="iufoundation">
@@ -244,10 +247,6 @@ class Resume extends React.Component {
               <em>October 2008 - May 2009</em>
               <div>HTML, CSS, JavaScript, Graphic Design</div>
               <ul>
-                <li>
-                  Created satellite website for the Bill Armstrong Golf Memorial
-                  Classic
-                </li>
                 <li>
                   Spam-proofed all email addresses and contact forms using
                   JavaScript
@@ -288,6 +287,11 @@ class Resume extends React.Component {
               </div>
               <div>Associate of Applied Science (A.A.S)</div>
               <div>August 2007 - May 2009</div>
+
+              <div className="banner-title">
+                <h2>Personal Projects</h2>
+              </div>
+              <div>Personal projects available at <a href="https://github.com/christopherrobin/" target="_blank" rel="noopener noreferrer">https://github.com/christopherrobin/</a></div>
 
               <div id="back-to-top" style={{ margin: '2em 0 1em 0', textAlign: 'center' }}>
                 <Button
